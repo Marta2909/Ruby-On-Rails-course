@@ -1,0 +1,15 @@
+<h1>Witaj!</h1>
+<p class="lead">Masz do czynienia z najlepszym blogiem o Rails w Polsce.</p>
+<p><%= 3 + 5 %></p>
+
+<% if @greet %>
+  <p>Hello <%= @name%>!</p>
+<% else %>
+  <p>Buuuu!</p>
+<% end %>
+
+<ul>
+  <% @numbers.each do |number| %>
+    <li><%= number %></li>
+  <% end %>
+</ul>
