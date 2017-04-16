@@ -1,0 +1,15 @@
+<h1>Witaj</h1>
+<p class="lead">jesteś na najlepszej stronie ever</p>
+<p><%= 3+5 %></p>
+
+<% if @greet %>
+  <p>Hello <%= @name %>!</p>
+<% else %>
+  <p>Buuuu</p>
+<% end %>
+
+<ul>
+  <% @table.each do |t| %>
+    <li><%= t %></li>
+  <% end %>
+</ul>

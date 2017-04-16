@@ -1,0 +1,15 @@
+<p class="lead">
+  Witaj w naszej Księdze Gości!
+  <%= link_to "Dodaj wpis", new_post_path %>
+</p>
+
+<div id="container-placeholder">
+  <%= link_to "Niespodzianka", surprise_posts_path, class: "btn btn-info", remote: true %>
+</div>
+
+<% @posts.each do |post| %>
+  <blockquote>
+    <p><%= post.body %></p>
+    <footer><cite><%= post.author %></cite></footer>
+  </blockquote>
+<% end %>
